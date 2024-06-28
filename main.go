@@ -6,16 +6,22 @@ import (
 
 func main() {
 	root := &TreeNode{
-		Val: 1,
+		Val: 3,
 		Left: &TreeNode{
-			Val: 2,
+			Val: 9,
 		},
 		Right: &TreeNode{
-			Val: 3,
+			Val: 20,
+			Left: &TreeNode{
+				Val: 15,
+			},
+			Right: &TreeNode{
+				Val: 7,
+			},
 		},
 	}
 
-	var check = isSymmetric(root)
+	var check = isBalanced(root)
 
 	// In giá trị của các nút
 	printTree(root)
