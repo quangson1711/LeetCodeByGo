@@ -5,28 +5,8 @@ import (
 )
 
 func main() {
-	root := &TreeNode{
-		Val: 1,
-		Left: &TreeNode{
-			Val: 2,
-			Left: &TreeNode{
-				Val: 4,
-			},
-			Right: &TreeNode{
-				Val: 5,
-			},
-		},
-		Right: &TreeNode{
-			Val: 3,
-		},
-	}
-
-	var check = hasPathSum(root, 4)
-
-	// In giá trị của các nút
-	printTree(root)
-
-	fmt.Println(check)
+	var array = []int{886, 729}
+	fmt.Println(maxProfit(array))
 }
 
 // Hàm in giá trị của các nút
