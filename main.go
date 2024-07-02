@@ -6,22 +6,22 @@ import (
 
 func main() {
 	root := &TreeNode{
-		Val: 2,
+		Val: 1,
+		Left: &TreeNode{
+			Val: 2,
+			Left: &TreeNode{
+				Val: 4,
+			},
+			Right: &TreeNode{
+				Val: 5,
+			},
+		},
 		Right: &TreeNode{
 			Val: 3,
-			Right: &TreeNode{
-				Val: 4,
-				Right: &TreeNode{
-					Val: 5,
-					Right: &TreeNode{
-						Val: 6,
-					},
-				},
-			},
 		},
 	}
 
-	var check = minDepth(root)
+	var check = hasPathSum(root, 4)
 
 	// In giá trị của các nút
 	printTree(root)
