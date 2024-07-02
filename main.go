@@ -6,22 +6,22 @@ import (
 
 func main() {
 	root := &TreeNode{
-		Val: 3,
-		Left: &TreeNode{
-			Val: 9,
-		},
+		Val: 2,
 		Right: &TreeNode{
-			Val: 20,
-			Left: &TreeNode{
-				Val: 15,
-			},
+			Val: 3,
 			Right: &TreeNode{
-				Val: 7,
+				Val: 4,
+				Right: &TreeNode{
+					Val: 5,
+					Right: &TreeNode{
+						Val: 6,
+					},
+				},
 			},
 		},
 	}
 
-	var check = isBalanced(root)
+	var check = minDepth(root)
 
 	// In giá trị của các nút
 	printTree(root)
