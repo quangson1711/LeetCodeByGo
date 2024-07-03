@@ -5,9 +5,8 @@ import (
 )
 
 func main() {
-	input := "A man, a plan, a canal: Panama"
-
-	a := isPalindrome(input)
+	var nums = []int{1}
+	a := singleNumber(nums)
 	fmt.Println(a)
 }
 
