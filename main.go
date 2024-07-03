@@ -5,8 +5,10 @@ import (
 )
 
 func main() {
-	var array = []int{886, 729}
-	fmt.Println(maxProfit(array))
+	input := "A man, a plan, a canal: Panama"
+
+	a := isPalindrome(input)
+	fmt.Println(a)
 }
 
 // Hàm in giá trị của các nút
