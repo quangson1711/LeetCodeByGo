@@ -16,7 +16,7 @@ func main() {
 	}
 	printTree(root)
 
-	numbers := preorderTraversal(root)
+	numbers := postorderTraversal(root)
 	fmt.Println(numbers)
 }
 
