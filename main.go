@@ -5,9 +5,19 @@ import (
 )
 
 func main() {
-	var nums = []int{1}
-	a := singleNumber(nums)
-	fmt.Println(a)
+	root := &TreeNode{
+		Val: 1,
+		Right: &TreeNode{
+			Val: 2,
+			Left: &TreeNode{
+				Val: 3,
+			},
+		},
+	}
+	printTree(root)
+
+	numbers := preorderTraversal(root)
+	fmt.Println(numbers)
 }
 
 // Hàm in giá trị của các nút
