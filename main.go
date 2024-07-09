@@ -5,19 +5,8 @@ import (
 )
 
 func main() {
-	root := &TreeNode{
-		Val: 1,
-		Right: &TreeNode{
-			Val: 2,
-			Left: &TreeNode{
-				Val: 3,
-			},
-		},
-	}
-	printTree(root)
-
-	numbers := postorderTraversal(root)
-	fmt.Println(numbers)
+	columnNumber := 1111
+	fmt.Println(convertToTitle(columnNumber)) // Output: 65
 }
 
 // Hàm in giá trị của các nút
