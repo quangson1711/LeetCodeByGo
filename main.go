@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	columnNumber := 1111
-	fmt.Println(convertToTitle(columnNumber)) // Output: 65
+	nums := []int{2, 2, 1, 1, 1, 2}
+	fmt.Println(majorityElement(nums))
 }
 
 // Hàm in giá trị của các nút
