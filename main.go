@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println(hammingWeight(128))
+	fmt.Println(isHappy(2))
 	//00000010100101000001111010011100
 	/*	num, err := BinaryToUint32("10100101000001111010011100")
 		if err != nil {
