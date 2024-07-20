@@ -5,8 +5,13 @@ import (
 )
 
 func main() {
-	nums := []int{2, 2, 1, 1, 1, 2}
-	fmt.Println(majorityElement(nums))
+	fmt.Println(hammingWeight(128))
+	//00000010100101000001111010011100
+	/*	num, err := BinaryToUint32("10100101000001111010011100")
+		if err != nil {
+			fmt.Println(err)
+		}
+		fmt.Println(num)*/
 }
 
 // Hàm in giá trị của các nút
